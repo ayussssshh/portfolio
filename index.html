@@ -240,6 +240,26 @@ nav{height:100%;display:flex;align-items:center;justify-content:space-between}
 .feature:before{content:"•";color:var(--purple-light);margin-right:8px}
 .tech-line strong{color:var(--purple-light)}
 
+.project-links {
+    display: flex;
+    gap: 18px;
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+}
+
+.project-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+    color: var(--primary);
+}
+
 /* INTERESTS */
 .interests{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .interest{padding:26px 17px;text-align:center}
@@ -390,9 +410,9 @@ footer{padding:42px 0;border-top:1px solid var(--border)}
         </div>
 
         <div class="socials">
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:your@email.com">Email</a>
+            <a href="https://github.com/ayussssshh" target="_blank" rel="noreferrer">GitHub</a>
+            <!-- <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a> -->
+            <a href="mailto:adikumar0069@gmail.com">Email</a>
         </div>
     </div>
 
@@ -467,7 +487,17 @@ footer{padding:42px 0;border-top:1px solid var(--border)}
                 <strong>Tech:</strong>
                 TypeScript · React · Vite · Fastify · PostgreSQL
             </p>
+
+            <div class="project-links">
+                <a href="https://github.com/ayussssshh/anonymous-conversation-platform" target="_blank" rel="noopener noreferrer">
+                    GitHub ↗
+                </a>
+                <!-- <a href="#" target="_blank" rel="noopener noreferrer">
+                    Documentation ↗
+                </a> -->
+            </div>
         </article>
+
 
         <article class="card project">
             <div class="project-top">
@@ -496,6 +526,15 @@ footer{padding:42px 0;border-top:1px solid var(--border)}
                 <strong>Tech:</strong>
                 JavaScript · Node.js · Express · PostgreSQL · Vite
             </p>
+
+            <div class="project-links">
+                <a href="https://github.com/ayussssshh/DevNotes" target="_blank" rel="noopener noreferrer">
+                    GitHub ↗
+                </a>
+                <a href="https://devnotes-xx8h.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    Live Demo ↗
+                </a>
+            </div>
         </article>
 
     </div>
