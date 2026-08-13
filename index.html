@@ -320,18 +320,88 @@ nav{height:100%;display:flex;align-items:center;justify-content:space-between}
 .approach p{color:var(--muted);font-size:15px;line-height:1.9}
 .approach strong{color:#e2e8f0}
 
-/* FOOTER */
-footer{padding:42px 0;border-top:1px solid var(--border)}
-.footer{display:flex;align-items:center;justify-content:space-between;gap:25px}
+/* FOOTER / CONTACT */
+footer{
+    padding:70px 0 42px;
+    border-top:1px solid var(--border);
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(99,102,241,.08),
+            transparent 45%
+        );
+}
+
+.footer{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:32px;
+}
+
+/* CONTACT */
+.contact-content{
+    text-align:center;
+    max-width:650px;
+    margin:0 auto;
+}
+
+.contact-content h2{
+    font-size:32px;
+    letter-spacing:-1px;
+    margin-bottom:10px;
+}
+
+.contact-content p{
+    max-width:560px;
+    margin:0 auto 22px;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.8;
+}
+
+.contact-content .socials{
+    justify-content:center;
+    gap:12px;
+}
+
+.contact-content .socials a{
+    display:inline-flex;
+    align-items:center;
+    padding:9px 15px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    background:rgba(15,23,42,.45);
+    color:#cbd5e1;
+    transition:.2s ease;
+}
+
+.contact-content .socials a:hover{
+    color:#fff;
+    border-color:var(--border-hover);
+    background:rgba(139,92,246,.1);
+    transform:translateY(-2px);
+}
+
+/* QUOTE */
 .quote{
+    align-self:center;
     padding:17px 23px;
     border:1px solid var(--border);
     border-radius:10px;
     background:rgba(15,23,42,.4);
     color:var(--purple-light);
     font-size:13px;
+    text-align:center;
 }
-.copy{color:var(--soft);font-size:11px}
+
+/* COPYRIGHT */
+.copy{
+    color:var(--soft);
+    font-size:11px;
+    text-align:center;
+    padding-top:5px;
+}
 
 /* MOBILE */
 @media(max-width:950px){
@@ -361,6 +431,26 @@ footer{padding:42px 0;border-top:1px solid var(--border)}
     .interests{grid-template-columns:1fr}
     .hero h1{font-size:44px}
     .features{grid-template-columns:1fr}
+}
+
+@media(max-width:700px){
+    .contact-content h2{
+        font-size:27px;
+    }
+
+    .contact-content p{
+        font-size:13px;
+    }
+
+    .contact-content .socials{
+        flex-direction:row;
+        justify-content:center;
+    }
+
+    .contact-content .socials a{
+        flex:1;
+        justify-content:center;
+    }
 }
 </style>
 </head>
@@ -703,10 +793,37 @@ footer{padding:42px 0;border-top:1px solid var(--border)}
 </main>
 
 <footer id="contact">
-<div class="container footer">
-    <div class="quote">❝ &nbsp; Build things. Understand things. Keep going deeper.</div>
-    <div class="copy">© 2026 Ayush Kumar Pandit. All rights reserved.</div>
-</div>
+    <div class="container footer">
+
+        <div class="contact-content">
+            <h2>Let's Connect</h2>
+            <p>
+                Have a question, want to discuss a project, or just want to say hello?
+                Feel free to reach out.
+            </p>
+
+            <div class="socials">
+                <a href="https://github.com/ayussssshh"
+                   target="_blank"
+                   rel="noreferrer">
+                    GitHub
+                </a>
+
+                <a href="mailto:adikumar0069@gmail.com">
+                    Email
+                </a>
+            </div>
+        </div>
+
+        <div class="quote">
+            ❝ &nbsp; Build things. Understand things. Keep going deeper.
+        </div>
+
+        <div class="copy">
+            © 2026 Ayush Kumar Pandit. All rights reserved.
+        </div>
+
+    </div>
 </footer>
 
 <script>
